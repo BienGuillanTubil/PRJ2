@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f1e1;
+      color: #5a3d29;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff5e1;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #5a3d29;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      font-size: 1.2em;
+      margin-bottom: 8px;
+      display: block;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="phone"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 2px solid #5a3d29;
+      border-radius: 5px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+    .submit-btn {
+      background-color: #5a3d29;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .submit-btn:hover {
+      background-color: #4a2f1a;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #5a3d29;
+    }
+    .footer a {
+      color: #5a3d29;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Join Our Coffee Shop Family</h1>
+    <p style="text-align: center; font-size: 1.1em; color: #5a3d29;">Become a part of our vibrant coffee community. Register to enjoy exclusive offers, updates, and more!</p>
+    
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="phone" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="favoriteCoffee">Favorite Coffee</label>
+        <select id="favoriteCoffee" name="favoriteCoffee" required>
+          <option value="">Select your favorite coffee</option>
+          <option value="Espresso">Espresso</option>
+          <option value="Cappuccino">Cappuccino</option>
+          <option value="Latte">Latte</option>
+          <option value="Americano">Americano</option>
+          <option value="Mocha">Mocha</option>
+          <option value="Customized">Customized</option> 
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Let us know why you love coffee!" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <div class="footer">
+      <p>Powered by <a href="#">Your Coffee Shop</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
